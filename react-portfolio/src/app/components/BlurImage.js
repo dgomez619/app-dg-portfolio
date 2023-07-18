@@ -1,28 +1,58 @@
 import Image from "next/image";
-import { useState } from 'react';
-
+import { useState } from "react";
 
 export default function BlurImage({ image }) {
-    const [isLoading, setLoading] = useState(true);
-  
-    return (
-      <a href={image.href} className="group">
-        <div className="aspect-w-1 aspect-h-1  overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-6">
-          <Image
-            alt=""
-            src={image}
-            layout="fill"
-            objectFit="cover"
-            className={`
-                duration-700 ease-in-out group-hover:opacity-75
-                ${
-                  isLoading
-                    ? "scale-110 blur-2xl grayscale"
-                    : "scale-100 blur-0 grayscale-0"
-                })`}
-            onLoadingComplete={() => setLoading(false)}
-          />
-        </div>
-      </a>
-    );
-  }
+  const [isLoading, setLoading] = useState(true);
+  const [isHovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
+
+  return (
+    <a
+      href={image.href}
+      className="group"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-6 relative">
+        <Image
+          alt=""
+          src={image}
+          layout="fill"
+          objectFit="cover"
+          className={`
+            duration-700 ease-in-out
+            ${isHovered ? "opacity-75" : ""}
+            ${isLoading ? "scale-110 blur-2xl grayscale" : "scale-100 blur-0 grayscale-0"}
+          `}
+          onLoadingComplete={() => setLoading(false)}
+        />
+        {isHovered && (
+
+          <div className="absolute inset-0 flex items-center justify-center">
+            <ul>
+              <li className="p-2">
+                <button className=" w-screen bg-teal-500 text-white px-4 py-2 rounded-lg font-burtons font-extrabold shadow-lg drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+              CODE
+            </button> 
+            </li>
+              <li className="p-2">
+              <button className=" w-screen bg-teal-500 text-white px-4 py-2 rounded-lg font-burtons font-extrabold shadow-lg drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] stroke-black stroke-2">
+                SITE
+              </button> 
+              </li>
+            </ul>
+                       
+          </div>         
+
+        )}
+      </div>
+    </a>
+  );
+}

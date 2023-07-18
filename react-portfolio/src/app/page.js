@@ -19,10 +19,10 @@ import consulting from '../../public/consulting.png'
 // images for portfolio 
 
 import crptapp from "../../public/crptapp.png"
-// import hdp2 from "../../public/hdp2.png"
+import hpd2 from "../../public/hpd2.png"
 import hrath from "../../public/hrath.png"
 import univ from "../../public/univ.png"
-// import stockmarket from "../../public/stockmarket.png"
+import stockmarket from "../../public/stockmarket.jpg"
 import coast2 from "../../public/coast2.png"
 
 import BlurImage from '../app/components/BlurImage'
@@ -87,7 +87,7 @@ export default function Home() {
       <a  href='www.linkedin.com/in/dan-gomez1' target='_blank'><AiFillLinkedin /></a>
       <a href="https://www.instagram.com/dgwav/" target='_blank'><AiFillInstagram /></a>
       </div>
-      
+
       {/* avatar */}
       <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
         <Image alt={''} src={dg} layout='fill' objectFit='cover'  />
@@ -148,7 +148,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* dark mode activare */}
+      {/* dark mode activate */}
       <section>
         <div>
           <h3 className='text-3xl py-1'>Portofolio</h3>
@@ -161,24 +161,47 @@ export default function Home() {
         </div>
         <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
           <div className='basis-1/3 flex-1'>
+
           <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={crptapp} />
-            {/* <Image alt={''} src={crptapp} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' /> */}
+
           </div>
-          {/* <div className='basis-1/3 flex-1'>
-            <Image alt={''} src={hdp2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
-          </div> */}
+
           <div className='basis-1/3 flex-1'>
-            <Image alt={''} src={hrath} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hpd2} />
+
           </div>
+
           <div className='basis-1/3 flex-1'>
-            <Image alt={''} src={univ} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hrath} />
+
           </div>
-          {/* <div className='basis-1/3 flex-1'>
-            <Image alt={''} src={stockmarket} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
-          </div> */}
+
           <div className='basis-1/3 flex-1'>
-            <Image alt={''} src={coast2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' />
+
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={univ} />
+
           </div>
+
+          <div className='basis-1/3 flex-1'>
+
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={stockmarket} />
+
+          </div>
+
+          <div className='basis-1/3 flex-1'>
+
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={coast2} />
+
+          </div>
+
+
+
+
+
+
+          
         </div>
       </section>
 

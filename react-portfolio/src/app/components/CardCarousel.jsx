@@ -47,19 +47,19 @@ const CardCarousel = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center w-screen ">
+    <div className="flex items-center justify-center w-full ">
       
       <div
-        className="overflow-hidden"
+        className="overflow-hidden "
       >
         {cards.map((card) => (
           <div
             key={card.id}
-            className="inline-block max-w-sm mx-2 bg-white shadow-lg rounded-lg overflow-hidden w-40"
+            className="inline-block max-w-sm mx-2 bg-white  shadow-lg rounded-lg overflow-hidden w-20 " 
           >
             <div className="p-4 ">
-              <h3 className=" text-center text-xs font-bold">{card.title}</h3>
-              <p >{card.description}</p>
+              <p className=" text-center text-[9px] font-bold text-black">{card.title}</p>
+              <p>{card.description}</p>
             </div>
           </div>
         ))}
