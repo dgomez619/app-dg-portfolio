@@ -60,21 +60,19 @@ export default function Home() {
           </ul>
         
       </nav>
-      <div className='text-center p-10 py-10'>
-        <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Daniel Gomez</h2>       
-        <h3 className='text-2xl py-2 md:text-3xl'>Developer and designer.</h3>
-        <p className='text-md py-5 leading-8 text-gray-800 md:text-lg max-w-xl mx-auto dark:text-cyan-50 '>Tech enthusiast with a passion for crafting seamless digital experiences. Armed with expertise in 
-        <span className='text-teal-500'> HTML</span>,
-        <span className='text-teal-500'> CSS</span>,
-        <span className='text-teal-500'> JavaScript </span>
-         and cutting-edge front-end technologies like 
-         <span className='text-teal-500'> Tailwind </span>
-         and
-         <span className='text-teal-500'> Ant Design</span>. Proficient in 
-        <span className='text-teal-500'> MERN </span>
-         stack development, I thrive on building efficient systems that empower users. Let&apos;s create impactful solutions together!          
-        </p>
+      <div className='text-center '>
+        <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Daniel Gomez</h2> 
       </div>
+
+      <div>
+          <h3 className='text-3xl py-1'>Relevant skills  </h3>
+          <p className='text-md py-2 leading-8 text-gray-800 dark:text-cyan-50'>
+
+          Mastering the art of web development with a touch of creativity. Implementing cutting-edge methods like <span className=' text-teal-500'>Redux</span>, <span className=' text-teal-500'>Vite </span> and <span className=' text-teal-500'> Next.js </span> to craft visually stunning, lightning-fast portals. Proficient in <span className=' text-teal-500'> Bootstrap</span>, <span className=' text-teal-500'> WordPress</span>, and adept at unleashing the full potential of graphic design tools like <span className=' text-teal-500'> Photoshop</span>, <span className=' text-teal-500'> Gimp</span>, and <span className=' text-teal-500'> Axure</span>. Ready bring your digital vision to life!               
+          </p>
+          
+        </div>
+   
 
         {/* skill cards */}
         <CardCarousel />
@@ -97,53 +95,39 @@ export default function Home() {
 
    
 
-      <section>
-        <div>
-          <h3 className='text-3xl py-1'>Relevant skills  </h3>
-          <p className='text-md py-2 leading-8 text-gray-800 dark:text-cyan-50'>
+      <section>     
 
-          Mastering the art of web development with a touch of creativity. Implementing cutting-edge methods like <span className=' text-teal-500'>Redux</span>, <span className=' text-teal-500'>Vite </span> and <span className=' text-teal-500'> Next.js </span> to craft visually stunning, lightning-fast portals. Proficient in <span className=' text-teal-500'> Bootstrap</span>, <span className=' text-teal-500'> WordPress</span>, and adept at unleashing the full potential of graphic design tools like <span className=' text-teal-500'> Photoshop</span>, <span className=' text-teal-500'> Gimp</span>, and <span className=' text-teal-500'> Axure</span>. Ready bring your digital vision to life!               
-          </p>
-          
-        </div>
+        <div  className='text-center '>      
+        <h3 className='text-2xl py-2 md:text-3xl'>Developer and designer.</h3>
+        <p className='text-md py-5 leading-8 text-gray-800 md:text-lg max-w-xl mx-auto dark:text-cyan-50 '>Tech enthusiast with a passion for crafting seamless digital experiences. Armed with expertise in 
+        <span className='text-teal-500'> HTML</span>,
+        <span className='text-teal-500'> CSS</span>,
+        <span className='text-teal-500'> JavaScript </span>
+         and cutting-edge front-end technologies like 
+         <span className='text-teal-500'> Tailwind </span>
+         and
+         <span className='text-teal-500'> Ant Design</span>. Proficient in 
+        <span className='text-teal-500'> MERN </span>
+         stack development, I thrive on building efficient systems that empower users. Let&apos;s create impactful solutions together!          
+        </p>
+      </div>
+
           {/* cards */}
-        <div className='lg:flex gap-10'>
+        <div className='lg:flex justify-center gap-10'>
           <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
             <Image alt={''} src={design} width={100} height={100}/>  
               <h3 className='text-lg font-medium pt-8 pb-2'>Designs</h3>     
-              <p className='py-2'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur, corporis placeat velit a omnis iusto odit itaque aliquam pariatur libero non optio sed ab corrupti eaque fugiat officia in.
-              </p>  
-              <h4 className='py-4 text-teal-600'>Skills</h4>   
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Axure</p>
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Gimp</p>
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Premier Pro</p>
+              
           </div>
           <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
             <Image alt={''} src={code} width={100} height={100}/>  
-              <h3 className='text-lg font-medium pt-8 pb-2'>Designs</h3>     
-              <p className='py-2'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur, corporis placeat velit a omnis iusto odit itaque aliquam pariatur libero non optio sed ab corrupti eaque fugiat officia in.
-              </p>  
-              <h4 className='py-4 text-teal-600'>Skills</h4>   
-              <RadialProgressBar className='text-center' progressEndValue={progressEndValue2} />
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Axure</p>
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Gimp</p>
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Premier Pro</p>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Code</h3>     
+              
           </div>
           <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
             <Image alt={''} src={consulting} width={100} height={100}/>  
-              <h3 className='text-lg font-medium pt-8 pb-2'>Designs</h3>     
-              <p className='py-2'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur, corporis placeat velit a omnis iusto odit itaque aliquam pariatur libero non optio sed ab corrupti eaque fugiat officia in.
-              </p>  
-              <h4 className='py-4 text-teal-600'>Skills</h4>   
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Photoshop</p>
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Axure</p>
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Gimp</p>
-              <p className='text-gray-800 py-1 dark:text-cyan-50'>Premier Pro</p>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Deploy</h3>     
+                           
           </div>          
         </div>
       </section>
@@ -152,55 +136,44 @@ export default function Home() {
       <section>
         <div>
           <h3 className='text-3xl py-1'>Portofolio</h3>
-          <p className='text-md py-2 leading-8 text-gray-800 dark:text-cyan-50'>
-            Lorem ipsum, dolor sit <span className=' text-teal-500'>voluptatum</span> amet consectetur adipisicing elit. Asperiores eum culpa amet laudantium sit soluta error ad non molestias magnam quam esse aspernatur reprehenderit <span className=' text-teal-500'>voluptatum</span> quidem voluptatem tempore debitis, nobis sed!    
-          </p>
-          <p className='text-md py-2 leading-8 text-gray-800 dark:text-cyan-50'>
-            Lorem ipsum, dolor sit <span className=' text-teal-500'>voluptatum</span> amet consectetur adipisicing elit. Asperiores eum culpa amet laudantium sit soluta error ad non molestias magnam quam esse aspernatur reprehenderit <span className=' text-teal-500'>voluptatum</span> quidem voluptatem tempore debitis, nobis sed!    
-          </p>
+          
         </div>
         <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
           <div className='basis-1/3 flex-1'>
 
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={crptapp} />
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={crptapp} buttonUrl={"https://github.com/dgomez619/cryptoapp"} buttonUrl2="https://dgomez619.github.io/cryptoapp/" />
 
           </div>
 
           <div className='basis-1/3 flex-1'>
 
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hpd2} />
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hpd2} buttonUrl={"https://github.com/dgomez619/WpHpd"} buttonUrl="https://hospedajespordia.com" />
 
           </div>
 
           <div className='basis-1/3 flex-1'>
 
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hrath} />
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hrath} buttonUrl={"https://github.com/dgomez619/hrathletes"} buttonUrl="https://dgomez619.github.io/hrathletes/" />
 
           </div>
 
           <div className='basis-1/3 flex-1'>
 
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={univ} />
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={univ} buttonUrl={"https://github.com/dgomez619/universidad-replica"} buttonUrl="https://dgomez619.github.io/universidad-replica/" />
 
           </div>
 
           <div className='basis-1/3 flex-1'>
 
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={stockmarket} />
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={stockmarket} buttonUrl={"https://github.com/MaxReinmueller/Stock-View"} buttonUrl2="https://maxreinmueller.github.io/Stock-View/" />
 
           </div>
 
           <div className='basis-1/3 flex-1'>
 
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={coast2} />
+          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={coast2} buttonUrl={"https://github.com/dgomez619/pacific-trail"} buttonUrl2="https://dgomez619.github.io/pacific-trail/index.html"/>
 
           </div>
-
-
-
-
-
-
           
         </div>
       </section>

@@ -3,7 +3,14 @@ import RadialProgressBar from './CircularBar'
 
 const CardCarousel = () => {
   const progressEndValue = 80;
-  const progressEndValue2 = 90;      
+  const progressEndValue2 = 80; 
+  const progressEndValue3 = 70;
+  const progressEndValue4 = 80;
+  const progressEndValue5 = 60;
+  const progressEndValue6 = 70;
+  const progressEndValue7 = 60;
+  const progressEndValue8 = 80;
+  const progressEndValue9 = 80;
 
 
   // Dummy data for cards
@@ -21,28 +28,38 @@ const CardCarousel = () => {
     {
       id: 3,
       title: 'JS',
-      description: <RadialProgressBar progressEndValue={progressEndValue} />,
+      description: <RadialProgressBar progressEndValue={progressEndValue3} />,
     },
     {
       id: 4,
       title: 'BOOTSTRAP',
-      description: <RadialProgressBar progressEndValue={progressEndValue2} />,
+      description: <RadialProgressBar progressEndValue={progressEndValue4} />,
     },
     {
       id: 5,
       title: 'REDUX',
-      description: <RadialProgressBar progressEndValue={progressEndValue} />,
+      description: <RadialProgressBar progressEndValue={progressEndValue5} />,
     },
     {
-      id: 5,
+      id: 6,
       title: 'REACT',
-      description: <RadialProgressBar progressEndValue={progressEndValue} />,
+      description: <RadialProgressBar progressEndValue={progressEndValue6} />,
      },
      {
-      id: 6,
-      title: 'REDUX',
-      description: <RadialProgressBar progressEndValue={progressEndValue} />,
-       },
+      id: 7,
+      title: 'MONGODB',
+      description: <RadialProgressBar progressEndValue={progressEndValue7} />,
+     },
+     {
+      id: 8,
+      title: 'PHOTOSHOP',
+      description: <RadialProgressBar progressEndValue={progressEndValue8} />,
+     },
+     {
+      id: 9,
+      title: 'AXURE',
+      description: <RadialProgressBar progressEndValue={progressEndValue9} />,
+     },     
     
   ];
 
