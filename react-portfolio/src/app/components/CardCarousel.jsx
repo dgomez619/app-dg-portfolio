@@ -47,7 +47,7 @@ const CardCarousel = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center ">
+    <div className="flex items-center justify-center bg-slate-600  min-[390px]: w-96">
       
       <div
         className="overflow-hidden"
@@ -58,8 +58,8 @@ const CardCarousel = () => {
             className="inline-block max-w-sm mx-2 bg-white shadow-lg rounded-lg overflow-hidden w-40"
           >
             <div className="p-4">
-              <h2 className="text-xl font-bold">{card.title}</h2>
-              <p className="text-gray-600">{card.description}</p>
+              <h2 className=" text-center text-sm font-bold">{card.title}</h2>
+              <p >{card.description}</p>
             </div>
           </div>
         ))}
