@@ -179,6 +179,7 @@ export default function Home() {
             width={'100%'} 
             height={'100%'} 
             layout='responsive'
+            key={index} 
             image={crptapp} 
             buttonUrl={Url2}
             buttonUrl2={Url1} />
@@ -194,6 +195,7 @@ export default function Home() {
             width={'100%'} 
             height={'100%'} 
             layout='responsive'
+            key={index} 
             image={hpd2} 
             buttonUrl={Url4}
             buttonUrl2={Url3} />
@@ -203,7 +205,29 @@ export default function Home() {
 
           </div>
 
-         
+          {/* <div className='basis-1/3 flex-1'> */}
+
+          {/* <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hrath} buttonUrl5={"https://github.com/dgomez619/hrathletes"} buttonUrl6="https://dgomez619.github.io/hrathletes/" /> */}
+
+          {/* </div> */}
+
+          {/* <div className='basis-1/3 flex-1'> */}
+
+          {/* <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={univ} buttonUrl7={"https://github.com/dgomez619/universidad-replica"} buttonUrl8="https://dgomez619.github.io/universidad-replica/" /> */}
+
+          {/* </div> */}
+
+          {/* <div className='basis-1/3 flex-1'> */}
+
+          {/* <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={stockmarket} buttonUrl9={"https://github.com/MaxReinmueller/Stock-View"} buttonUrl10="https://maxreinmueller.github.io/Stock-View/" /> */}
+
+          {/* </div> */}
+
+          {/* <div className='basis-1/3 flex-1'> */}
+
+          {/* <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={coast2} buttonUrl11={"https://github.com/dgomez619/pacific-trail"} buttonUrl12="https://dgomez619.github.io/pacific-trail/index.html"/> */}
+
+          {/* </div> */}
           
         </div>
       </section>
