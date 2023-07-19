@@ -20,14 +20,13 @@ import consulting from '../../public/consulting.png'
 
 import crptapp from "../../public/crptapp.png"
 import hpd2 from "../../public/hpd2.png"
-import hrath from "../../public/hrath.png"
-import univ from "../../public/univ.png"
-import stockmarket from "../../public/stockmarket.jpg"
-import coast2 from "../../public/coast2.png"
+// import hrath from "../../public/hrath.png"
+// import univ from "../../public/univ.png"
+// import stockmarket from "../../public/stockmarket.jpg"
+// import coast2 from "../../public/coast2.png"
 
 import BlurImage from '../app/components/BlurImage'
 import CardCarousel from '../app/components/CardCarousel';
-import RadialProgressBar from '../app/components/CircularBar'
 
 // dark mode
 
@@ -35,8 +34,41 @@ import { useState } from 'react';
 
 
 export default function Home() {
-  const progressEndValue = 80;
-  const progressEndValue2 = 90;
+  const blurImageItems = [
+    {
+      buttonUrl: " https://dgomez619.github.io/cryptoapp/",
+      buttonUrl2: "https://github.com/dgomez619/cryptoapp",
+    },
+    {
+      buttonUrl: "https://hospedajespordia.com",
+      buttonUrl2: "https://github.com/dgomez619/WpHpd",
+    },
+  ]
+
+ 
+
+  // images and urls for buttons 
+
+  // const Image1 = blurImageItems[0].image;
+  // const Image2 = blurImageItems[1].image;
+  // const Image3 = blurImageItems[2].image;
+  // const Image4 = blurImageItems[3].image;
+  // const Image5 = blurImageItems[4].image;
+  // const Image6 = blurImageItems[5].image;
+  // const Image7 = blurImageItems[5].image;
+  // const Image8 = blurImageItems[6].image;
+  // const Image9 = blurImageItems[7].image;
+  
+  const Url1 = blurImageItems[0].buttonUrl
+  const Url2 = blurImageItems[0].buttonUrl2
+  const Url3 = blurImageItems[1].buttonUrl;
+  const Url4 = blurImageItems[1].buttonUrl2;
+  // const Url5 = blurImageItems[4].buttonUrl;
+  // const Url6 = blurImageItems[5].buttonUrl;
+  // const Url7 = blurImageItems[6].buttonUrl;
+  // const Url8 = blurImageItems[7].buttonUrl;
+  // const Url9 = blurImageItems[8].buttonUrl;
+  
 
 
   const [darkMode, setDarkMode] = useState(false)
@@ -141,39 +173,37 @@ export default function Home() {
         <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
           <div className='basis-1/3 flex-1'>
 
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={crptapp} buttonUrl={"https://github.com/dgomez619/cryptoapp"} buttonUrl2="https://dgomez619.github.io/cryptoapp/" />
+          {blurImageItems.map((item, index) => (
+            <BlurImage 
+            className='rounded-lg object-cover'
+            width={'100%'} 
+            height={'100%'} 
+            layout='responsive'
+            image={crptapp} 
+            buttonUrl={Url2}
+            buttonUrl2={Url1} />
+          ))}          
 
           </div>
 
           <div className='basis-1/3 flex-1'>
 
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hpd2} buttonUrl={"https://github.com/dgomez619/WpHpd"} buttonUrl="https://hospedajespordia.com" />
+          {blurImageItems.map((item, index) => (
+            <BlurImage 
+            className='rounded-lg object-cover'
+            width={'100%'} 
+            height={'100%'} 
+            layout='responsive'
+            image={hpd2} 
+            buttonUrl={Url4}
+            buttonUrl2={Url3} />
+          ))}          
+
+          {/* <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hpd2} buttonUrl3={"https://github.com/dgomez619/WpHpd"} buttonUrl4="https://hospedajespordia.com" /> */}
 
           </div>
 
-          <div className='basis-1/3 flex-1'>
-
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={hrath} buttonUrl={"https://github.com/dgomez619/hrathletes"} buttonUrl="https://dgomez619.github.io/hrathletes/" />
-
-          </div>
-
-          <div className='basis-1/3 flex-1'>
-
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={univ} buttonUrl={"https://github.com/dgomez619/universidad-replica"} buttonUrl="https://dgomez619.github.io/universidad-replica/" />
-
-          </div>
-
-          <div className='basis-1/3 flex-1'>
-
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={stockmarket} buttonUrl={"https://github.com/MaxReinmueller/Stock-View"} buttonUrl2="https://maxreinmueller.github.io/Stock-View/" />
-
-          </div>
-
-          <div className='basis-1/3 flex-1'>
-
-          <BlurImage  className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'  image={coast2} buttonUrl={"https://github.com/dgomez619/pacific-trail"} buttonUrl2="https://dgomez619.github.io/pacific-trail/index.html"/>
-
-          </div>
+         
           
         </div>
       </section>

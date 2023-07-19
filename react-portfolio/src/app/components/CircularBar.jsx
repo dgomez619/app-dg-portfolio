@@ -33,7 +33,7 @@ const ProgressBar = ({ progressEndValue }) => {
     <div className=" flex justify-center">
       <span>
       <div className=" circular-progress" style={progressBarStyle}></div>
-      <div className=" value-container">{`${progressValue}%`}</div>
+      {/* <div className=" value-container">{`${progressValue}%`}</div> */}
       </span>
       
       
