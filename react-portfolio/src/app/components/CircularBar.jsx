@@ -3,7 +3,7 @@ import './CircularBar.css'
 
 const ProgressBar = ({ progressEndValue }) => {
   const [progressValue, setProgressValue] = useState(0);
-  const speed = 50;
+  const speed = 100;
   const progressRef = useRef(null);
 
   useEffect(() => {

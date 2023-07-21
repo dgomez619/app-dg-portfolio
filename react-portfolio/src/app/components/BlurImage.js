@@ -38,14 +38,14 @@ export default function BlurImage({image, buttonUrl, buttonUrl2}) {
           <div className="absolute inset-0 flex items-center justify-center">
             <ul>
               <li className="p-2">
-                <button className=" w-screen bg-teal-500 text-white px-4 py-2 rounded-lg font-burtons font-extrabold shadow-lg drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" onClick={()=> window.open(buttonUrl, "_blank")}>
-              CODE
+            <button className=" w-screen bg-teal-500 text-white px-4 py-2 rounded-lg font-burtons font-extrabold shadow-lg drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" onClick={()=> window.open(buttonUrl, "_blank")}>
+              SITE
             </button> 
             </li>
               <li className="p-2">
-              <button className=" w-screen bg-teal-500 text-white px-4 py-2 rounded-lg font-burtons font-extrabold shadow-lg drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] stroke-black stroke-2" onClick={()=> window.open(buttonUrl2, "_blank")}>
-                SITE
-              </button> 
+            <button className=" w-screen bg-teal-500 text-white px-4 py-2 rounded-lg font-burtons font-extrabold shadow-lg drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] stroke-black stroke-2" onClick={()=> window.open(buttonUrl2, "_blank")}>
+              CODE
+            </button> 
               </li>
             </ul>
                        
