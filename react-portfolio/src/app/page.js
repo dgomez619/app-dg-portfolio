@@ -36,31 +36,37 @@ import { useState } from 'react';
 export default function Home() {
   const blurImageItems = [
     {
+      id: 1,
       image: crptapp,
       buttonUrl: " https://dgomez619.github.io/cryptoapp/",
       buttonUrl2: "https://github.com/dgomez619/cryptoapp",
     },
     {
+      id: 2,
       image: hpd2,
       buttonUrl: "https://hospedajespordia.com",
       buttonUrl2: "https://github.com/dgomez619/WpHpd",
     },
     {
+      id: 3,
       image: hrath,
       buttonUrl: "https://dgomez619.github.io/hrathletes/",
       buttonUrl2: "https://github.com/dgomez619/hrathletes",
     },
     {
+      id: 4,
       image: univ,
       buttonUrl: "https://dgomez619.github.io/universidad-replica/",
       buttonUrl2: "https://github.com/dgomez619/universidad-replica",
     },
     {
+      id: 5,
       image: stockmarket,
       buttonUrl: "https://maxreinmueller.github.io/Stock-View/",
       buttonUrl2: "https://github.com/MaxReinmueller/Stock-View",
     },
     {
+      id: 6,
       image: coast2,
       buttonUrl: "https://dgomez619.github.io/pacific-trail/index.html",
       buttonUrl2: "https://github.com/dgomez619/pacific-trail",
@@ -175,14 +181,14 @@ export default function Home() {
 
         <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
           
-          {blurImageItems.map((item, index) => (
+          {blurImageItems.map((item) => (
           <div className='basis-1/3 flex-1'>
             <BlurImage 
             className='rounded-lg object-cover'
             width={'100%'} 
             height={'100%'} 
             layout='responsive'
-            key={index} 
+            key={item.id} 
             image={item.image} 
             buttonUrl={item.buttonUrl}
             buttonUrl2={item.buttonUrl2} />
