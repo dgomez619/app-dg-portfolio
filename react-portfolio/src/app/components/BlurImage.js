@@ -1,3 +1,4 @@
+import { isRouteMatch } from "next/dist/server/future/route-matches/route-match";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -15,7 +16,6 @@ export default function BlurImage({image, buttonUrl, buttonUrl2}) {
 
   return (
     <a
-      href={image.href}
       className="group"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -23,13 +23,13 @@ export default function BlurImage({image, buttonUrl, buttonUrl2}) {
       <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-6 relative">
         <Image
           alt=""
-          src={image.src}
+          src={image}
           layout="fill"
           objectFit="cover"
           className={`
             duration-700 ease-in-out
             ${isHovered ? "opacity-75" : ""}
-            ${isLoading ? "scale-110 blur-2xl grayscale" : "scale-100 blur-0 grayscale-0"}
+            ${isLoading ? "scale-110 blur-2xl" : "scale-100 blur-0"}
           `}
           onLoadingComplete={() => setLoading(false)}
         />
