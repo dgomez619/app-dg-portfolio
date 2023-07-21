@@ -182,97 +182,12 @@ export default function Home() {
             width={'100%'} 
             height={'100%'} 
             layout='responsive'
-            key={item.index} 
+            key={index} 
             image={item.image} 
             buttonUrl={item.buttonUrl}
             buttonUrl2={item.buttonUrl2} />
           </div>
-          ))}
-
-          {/* <div className='basis-1/3 flex-1'>
-          {blurImageItems.map((item, index) => (
-            <BlurImage 
-            className='rounded-lg object-cover'
-            width={'100%'} 
-            height={'100%'} 
-            layout='responsive'
-            key={index} 
-            image={hpd2} 
-            buttonUrl={Url3}
-            buttonUrl2={Url4} />
-          ))} 
-          </div>
-          <div className='basis-1/3 flex-1'>
-          {blurImageItems.map((item, index) => (
-            <BlurImage 
-            className='rounded-lg object-cover'
-            width={'100%'} 
-            height={'100%'} 
-            layout='responsive'
-            key={index} 
-            image={crptapp} 
-            buttonUrl={Url2}
-            buttonUrl2={Url1} />
-          ))}
-          </div>
-
-          <div className='basis-1/3 flex-1'>
-          {blurImageItems.map((item, index) => (
-            <BlurImage 
-            className='rounded-lg object-cover'
-            width={'100%'} 
-            height={'100%'} 
-            layout='responsive'
-            key={index} 
-            image={hrath} 
-            buttonUrl={Url5}
-            buttonUrl2={Url6} />
-          ))} 
-          </div>
-
-          <div className='basis-1/3 flex-1'>
-          {blurImageItems.map((item, index) => (
-            <BlurImage 
-            className='rounded-lg object-cover'
-            width={'100%'} 
-            height={'100%'} 
-            layout='responsive'
-            key={index} 
-            image={univ} 
-            buttonUrl={Url7}
-            buttonUrl2={Url8} />
-          ))}
-          </div>
-
-          <div className='basis-1/3 flex-1'>
-          {blurImageItems.map((item, index) => (
-            <BlurImage 
-            className='rounded-lg object-cover'
-            width={'100%'} 
-            height={'100%'} 
-            layout='responsive'
-            key={index} 
-            image={stockmarket} 
-            buttonUrl={Url9}
-            buttonUrl2={Url10} />
-          ))} 
-          </div>
-
-          <div className='basis-1/3 flex-1'>
-          {blurImageItems.map((item, index) => (
-            <BlurImage 
-            className='rounded-lg object-cover'
-            width={'100%'} 
-            height={'100%'} 
-            layout='responsive'
-            key={index} 
-            image={stockmarket} 
-            buttonUrl={Url11}
-            buttonUrl2={Url12} />
-          ))} 
-          </div> */}
-
-          
+          ))}          
           
         </div>
       </section>
