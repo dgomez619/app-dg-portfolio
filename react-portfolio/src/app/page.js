@@ -181,15 +181,15 @@ export default function Home() {
 
         <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
           
-          {blurImageItems.map((item) => (
+          {blurImageItems.map((item, index) => (
           <div className='basis-1/3 flex-1'>
             <BlurImage 
+            key={item.id}
             className='rounded-lg object-cover'
             width={'100%'} 
             height={'100%'} 
-            layout='responsive'
-            key={item.id} 
-            image={item.image} 
+            layout='responsive'            
+            image={index} 
             buttonUrl={item.buttonUrl}
             buttonUrl2={item.buttonUrl2} />
           </div>
