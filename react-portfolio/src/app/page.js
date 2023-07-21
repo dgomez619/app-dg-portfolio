@@ -182,7 +182,7 @@ export default function Home() {
             width={'100%'} 
             height={'100%'} 
             layout='responsive'
-            key={index} 
+            key={item.index} 
             image={item.image} 
             buttonUrl={item.buttonUrl}
             buttonUrl2={item.buttonUrl2} />
