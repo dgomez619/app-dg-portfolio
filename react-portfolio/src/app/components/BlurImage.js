@@ -2,7 +2,7 @@ import { isRouteMatch } from "next/dist/server/future/route-matches/route-match"
 import Image from "next/image";
 import { useState } from "react";
 
-export default function BlurImage({image, buttonUrl, buttonUrl2}) {
+export default function BlurImage({image, id,  buttonUrl, buttonUrl2}) {
   const [isLoading, setLoading] = useState(true);
   const [isHovered, setHovered] = useState(false);
 
@@ -23,6 +23,7 @@ export default function BlurImage({image, buttonUrl, buttonUrl2}) {
       <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-6 relative">
         <Image
           alt=""
+          key={id}
           src={image}
           layout="fill"
           objectFit="cover"
