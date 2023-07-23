@@ -27,6 +27,7 @@ import coast2 from "../../public/coast2.png"
 
 import BlurImage from '../app/components/BlurImage'
 import CardCarousel from '../app/components/CardCarousel';
+import Card from './components/CardRipple';
 
 // dark mode
 
@@ -142,11 +143,9 @@ export default function Home() {
       {/* Social Icons */}
       <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
       <a href="https://github.com/dgomez619" target='_blank'><AiFillGithub/></a>
-      <a  href='www.linkedin.com/in/dan-gomez1' target='_blank'><AiFillLinkedin /></a>
+      <a  href='https://linkedin.com/in/dan-gomez1' target='_blank'><AiFillLinkedin /></a>
       <a href="https://www.instagram.com/dgwav/" target='_blank'><AiFillInstagram /></a>
-      </div>
-
-  
+      </div>  
       </section>
       {/* second section */}
 
@@ -154,6 +153,9 @@ export default function Home() {
 
       <section>  
           {/* cards */}
+
+        <Card/>
+          
         <div className='lg:flex justify-center gap-10'>
           <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
             <Image alt={''} src={design} width={100} height={100}/>  

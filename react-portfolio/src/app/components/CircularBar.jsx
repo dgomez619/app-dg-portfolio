@@ -1,12 +1,19 @@
 import React, { useEffect, useRef, useState } from "react";
-import './CircularBar.css'
+import "./CircularBar.css";
 
 const ProgressBar = ({ progressEndValue }) => {
   const [progressValue, setProgressValue] = useState(0);
   const speed = 100;
   const progressRef = useRef(null);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isClient) return;
+
     progressRef.current = setInterval(() => {
       setProgressValue((prevProgress) => prevProgress + 1);
     }, speed);
@@ -14,13 +21,15 @@ const ProgressBar = ({ progressEndValue }) => {
     return () => {
       clearInterval(progressRef.current);
     };
-  }, []);
+  }, [isClient]);
 
   useEffect(() => {
+    if (!isClient) return;
+
     if (progressValue >= progressEndValue) {
       clearInterval(progressRef.current);
     }
-  }, [progressValue, progressEndValue]);
+  }, [progressValue, progressEndValue, isClient]);
 
   const progressBarStyle = {
     background: `conic-gradient(
@@ -30,14 +39,14 @@ const ProgressBar = ({ progressEndValue }) => {
   };
 
   return (
-    <div className=" flex justify-center">
-      <span>
-      <div className=" circular-progress" style={progressBarStyle}></div>
-      {/* <div className=" value-container">{`${progressValue}%`}</div> */}
-      </span>
-      
-      
-    </div>
+    isClient && ( // Conditionally render on the client
+      <div className=" flex justify-center">
+        <span>
+          <div className="circular-progress" style={progressBarStyle}></div>
+          {/* <div className="value-container">{`${progressValue}%`}</div> */}
+        </span>
+      </div>
+    )
   );
 };
 
