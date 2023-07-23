@@ -154,21 +154,21 @@ export default function Home() {
       <section>  
           {/* cards */}
 
-        <Card/>
+        {/* <Card/> */}
           
         <div className='lg:flex justify-center gap-10'>
           <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
-            <Image alt={''} src={design} width={100} height={100}/>  
+            <Image  alt={''} src={design} width={100} height={100}/>  
               <h3 className='text-lg font-medium pt-8 pb-2'>Designs</h3>     
               
           </div>
           <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
-            <Image alt={''} src={code} width={100} height={100}/>  
+            <Image  alt={''} src={code} width={100} height={100}/>  
               <h3 className='text-lg font-medium pt-8 pb-2'>Code</h3>     
               
           </div>
           <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
-            <Image alt={''} src={consulting} width={100} height={100}/>  
+            <Image  alt={''} src={consulting} width={100} height={100}/>  
               <h3 className='text-lg font-medium pt-8 pb-2'>Deploy</h3>     
                            
           </div>          
