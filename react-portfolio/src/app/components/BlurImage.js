@@ -23,7 +23,7 @@ export default function BlurImage({image,buttonUrl, buttonUrl2}) {
       <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-6 relative">
         <Image
           alt=""
-          src={image}
+          src={image}          
           layout="fill"
           objectFit="cover"
           className={`
