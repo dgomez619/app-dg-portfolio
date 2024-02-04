@@ -84,10 +84,10 @@ export default function Home() {
           {/* skill cards */}
 
           <div>
-            <h3 className='text-3xl py-1'>Relevant skills  </h3>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-cyan-50'>
+            <h3 className='text-3xl py-4 mt-4 tex'>Relevant skills  </h3>
+            <p className='text-md text-justify py-2 px-40 leading-8 text-gray-800 dark:text-cyan-50'>
 
-              Mastering the art of web development with a touch of creativity. Implementing cutting-edge methods like <span className=' text-teal-500'>Redux</span>, <span className=' text-teal-500'>Vite </span> and <span className=' text-teal-500'> Next.js </span> to craft visually stunning, lightning-fast portals. Proficient in <span className=' text-teal-500'> Bootstrap</span>, <span className=' text-teal-500'> WordPress</span>, and adept at unleashing the full potential of graphic design tools like <span className=' text-teal-500'> Photoshop</span>, <span className=' text-teal-500'> Illustrator</span>, and <span className=' text-teal-500'> Figma</span>. Ready to bring your digital vision to life!
+              Mastering the art of web development with a touch of creativity. Implementing cutting-edge methods like <span className=' text-teal-500'>Redux</span>, <span className=' text-teal-500'>Vite </span> and <span className=' text-teal-500'> Next.js </span> to craft  visually stunning, lightning-fast portals. Proficient in <span className=' text-teal-500'> Bootstrap</span>, <span className=' text-teal-500'> WordPress</span>, and adept at unleashing the full potential of graphic design tools  like <span className=' text-teal-500'> Photoshop</span>, <span className=' text-teal-500'> Illustrator</span>, and <span className=' text-teal-500'> Figma</span>. Ready to bring your digital vision to life!
             </p>
 
           </div>

@@ -18,18 +18,18 @@ const Contact = () => {
         emailjs.sendForm('service_ooprlrs', 'template_pd8sn4f', form.current, 'Sfscmxos6YxpsQrKo')
             .then((result) => {
                 console.log(result.text);
-                setSubmissionMessage('Su mensaje fue enviado exitosamente.');
+                setSubmissionMessage('Message sent successfully.');
 
             }, (error) => {
                 console.log(error.text);
-                setSubmissionMessage('Ocurrió un error, por favor vuelva a intentar.');
+                setSubmissionMessage('An error occurred, please try again.');
             });
         e.target.reset()
     };
 
 
     return (
-        <section id='contact'>
+        <section id='contact' className=' mb-36'>
             <h3 className='text-3xl py-1'>Contact</h3>
 
             <div className=" mx-auto my-4 px-4 lg:px-20">
@@ -64,36 +64,37 @@ const Contact = () => {
 
 
 
-                <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-teal-500 rounded-2xl">
+                <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-8 ml-auto bg-teal-500 rounded-2xl">
                     <div className="flex flex-col text-white">
-                        <h1 className="font-bold uppercase text-4xl my-4">Socials</h1>
+                        <h1 className="font-bold uppercase text-4xl my-2">Socials</h1>
 
 
-                        <div className="grid-cols-1 sm:grid md:grid-cols-2 gap-3 ">
+                        <div className="flex flex-row flex-wrap justify-center text-black text-5xl gap-1  md:gap-3 md:text-7xl ">
                             <div
-                                className="mx-3 mt-6 flex flex-col items-center rounded-lg sm:shrink-0 sm:grow sm:basis-0 hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all">
+                                className="mx-3 mt-6 flex flex-col items-center rounded-lg sm:shrink-0 sm:grow sm:basis-0 hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all  ">
                                 <a href="mailto:gomez.d@live.com">
-                                    <MdOutlineMailOutline style={{ color: "black", fontSize: "5rem" }} />                                </a>
+                                    <MdOutlineMailOutline />           
+                                </a>
 
                             </div>
                             <div
-                                className="mx-3 mt-6 flex flex-col items-center align-middle rounded-lg sm:shrink-0 sm:grow sm:basis-0 hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all">
+                                className="mx-3 mt-6 flex flex-col items-center align-middle rounded-lg sm:shrink-0 sm:grow sm:basis-0 hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all  ">
                                 <a href="https://api.whatsapp.com/send?phone=16194322363" target='_blank'>
-                                    <BsWhatsapp style={{ color: "black", fontSize: "5rem" }} />
+                                    <BsWhatsapp/>
                                 </a>
 
                             </div>
                             <div
-                                className="mx-3 mt-6 flex flex-col items-center rounded-lg sm:shrink-0 sm:grow sm:basis-0 hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all">
+                                className="mx-3 mt-6 flex flex-col items-center rounded-lg sm:shrink-0 sm:grow sm:basis-0 hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all  ">
                                 <a href="https://github.com/dgomez619" target='_blank'>
-                                    <FaGithub style={{ color: "black", fontSize: "5rem" }} />
+                                    <FaGithub/>
                                 </a>
 
                             </div>
                             <div
-                                className="mx-3 mt-6 flex flex-col items-center rounded-lg sm:shrink-0 sm:grow sm:basis-0 hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all">
+                                className="mx-3 mt-6 flex flex-col items-center rounded-lg sm:shrink-0 sm:grow sm:basis-0 hover:shadow-[0_4px_0px_rgb(0,0,0)] ease-out hover:translate-y-1 transition-all  ">
                                 <a href="https://www.instagram.com/dgwav/" target='_blank'>
-                                    <FaInstagramSquare style={{ color: "black", fontSize: "5rem" }} />
+                                    <FaInstagramSquare/>
                                 </a>
 
                             </div>
