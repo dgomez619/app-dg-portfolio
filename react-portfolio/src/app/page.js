@@ -85,7 +85,7 @@ export default function Home() {
 
           <div>
             <h3 className='text-3xl py-4 mt-4 tex'>Relevant skills  </h3>
-            <p className='text-md text-justify py-2 px-40 leading-8 text-gray-800 dark:text-cyan-50'>
+            <p className='text-md text-justify py-2 px-2 md:px-40 leading-8 text-gray-800 dark:text-cyan-50'>
 
               Mastering the art of web development with a touch of creativity. Implementing cutting-edge methods like <span className=' text-teal-500'>Redux</span>, <span className=' text-teal-500'>Vite </span> and <span className=' text-teal-500'> Next.js </span> to craft  visually stunning, lightning-fast portals. Proficient in <span className=' text-teal-500'> Bootstrap</span>, <span className=' text-teal-500'> WordPress</span>, and adept at unleashing the full potential of graphic design tools  like <span className=' text-teal-500'> Photoshop</span>, <span className=' text-teal-500'> Illustrator</span>, and <span className=' text-teal-500'> Figma</span>. Ready to bring your digital vision to life!
             </p>
@@ -113,17 +113,17 @@ export default function Home() {
           {/* <Card/> */}
 
           <div className='lg:flex justify-center gap-10'>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
+            <div className=' flex justify-around  text-center  shadow-lg p-10 rounded-xl my-10 '>
               <Image alt={''} src={design} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Designs</h3>
 
             </div>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
+            <div className=' flex justify-around text-center shadow-lg p-10 rounded-xl my-10 '>
               <Image alt={''} src={code} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Code</h3>
 
             </div>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10 '>
+            <div className=' flex justify-around text-center shadow-lg p-10 rounded-xl my-10 '>
               <Image alt={''} src={consulting} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Deploy</h3>
 

@@ -29,12 +29,12 @@ const Contact = () => {
 
 
     return (
-        <section id='contact' className=' mb-36'>
+        <section id='contact' className='mb-36'>
             <h3 className='text-3xl py-1'>Contact</h3>
 
             <div className=" mx-auto my-4 px-4 lg:px-20">
 
-                <form ref={form} onSubmit={sendEmail} className='w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl'>
+                <form ref={form} onSubmit={sendEmail} className=' w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl'>
                     {submissionMessage && <div className="text-green-500 pb-5">{submissionMessage}</div>}
 
                     <div>
