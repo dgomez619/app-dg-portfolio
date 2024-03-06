@@ -38,8 +38,8 @@ const Portfolio = () => {
         {
           id: 5,
           image: stockmarket,
-          buttonUrl: "https://maxreinmueller.github.io/Stock-View/",
-          buttonUrl2: "https://github.com/MaxReinmueller/Stock-View",
+          buttonUrl: "https://comforting-bavarois-5bd4d5.netlify.app/",
+          buttonUrl2: "https://github.com/dgomez619/space-tourism",
         },
         {
           id: 6,
